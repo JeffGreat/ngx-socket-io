@@ -25,11 +25,11 @@ export class WrappedSocket {
     }
 
     of(namespace: string) {
-        this.ioSocket.of(namespace);
+        return this.ioSocket.of(namespace);
     }
 
     on(eventName: string, callback: Function) {
-        this.ioSocket.on(eventName, callback);
+        return this.ioSocket.on(eventName, callback);
     }
 
     once(eventName: string, callback: Function) {
